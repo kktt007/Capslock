@@ -7,7 +7,9 @@
 ; Provieds an enhancement towards the "Useless Key" CapsLock, and     |
 ; turns CapsLock into an useful function Key just like Ctrl and Alt   |
 ; by combining CapsLock with almost all other keys in the keyboard.   |
-;                                                                     |
+; 参考 https://www.autohotkey.com/docs/commands/KeyWait.htm           |
+;https://www.autohotkey.com/docs/misc/EscapeChar.htm                  |
+;https://www.autohotkey.com/docs/commands/SetNumScrollCapsLockState.htm |
 ;Summary:                                                             |
 ;o----------------------o---------------------------------------------o
 ;|CapsLock;             | {ESC}  Especially Convient for vim user     |
@@ -41,7 +43,7 @@ SetCapsLockState, AlwaysOff                                          ;|
 ;---------------------------------o-----------------------------------o
 ;                    CapsLock + ` | {CapsLock}                       ;|
 ;---------------------------------o-----------------------------------o
-CapsLock & `::                                                       ;|
+CapsLock & -::                                                       ;|
 GetKeyState, CapsLockState, CapsLock, T                              ;|
 if CapsLockState = D                                                 ;|
     SetCapsLockState, AlwaysOff                                      ;|
@@ -266,7 +268,7 @@ return                                                               ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & ,:: Send, {Del}                                           ;|
 CapsLock & .:: Send, ^{Del}                                          ;|
-;CapsLock & m:: Send, {BS}                                            ;|
+CapsLock & m:: Send, {BS}                                            ;|
 CapsLock & n:: Send, ^{BS}                                           ;|
 ;---------------------------------------------------------------------o
 
@@ -377,7 +379,7 @@ CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe    ;|
 ;                     CapsLock + 0  |  Shift + 0     )               ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & `;:: Send, {Enter}                                        ;|
-CapsLock & m:: Send, {Enter}                                         ;|
+;CapsLock & m:: Send, {Enter}                                         ;|
 CapsLock & [:: Send, {Esc}                                           ;|
 CapsLock & ':: Send, =                                               ;|
 ;CapsLock & [:: Send, ^-                                              ;|
