@@ -270,8 +270,8 @@ CapsLock & ,:: Send, {Del}                                           ;|
 CapsLock & .:: Send, ^{Del}                                          ;|
 ;CapsLock & m:: Send, {BS}                                            ;|
 CapsLock & n:: Send, ^{BS}                                           ;|
-CapsLock & d:: Send, +{Home}{Del}                                    ;|
-CapsLock & f:: Send, +{End}{Del}                                     ;|
+CapsLock & w:: Send, +{Home}{Del}                                    ;|
+CapsLock & d:: Send, +{End}{Del}                                     ;|
 ;---------------------------------------------------------------------o
 
 
@@ -293,7 +293,7 @@ CapsLock & c:: Send, ^c                                              ;|
 CapsLock & v:: Send, ^v                                              ;|
 CapsLock & a:: Send, ^a                                              ;|
 CapsLock & y:: Send, ^y                                              ;|
-CapsLock & w:: Send, ^{Right}                                        ;|
+CapsLock & f:: Send, ^{Right}                                        ;|
 CapsLock & b:: Send, ^{Left}                                         ;|
 ;---------------------------------------------------------------------o
 
@@ -354,7 +354,7 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;-----------------------------------o---------------------------------o
 ;CapsLock & d:: Send, !d                                              ;|
 ;CapsLock & f:: Send, !f                                              ;|
-CapsLock & e:: Run http://cn.bing.com/                               ;|
+;CapsLock & e:: Run http://cn.bing.com/                               ;|
 CapsLock & r:: Run Powershell                                        ;|
 CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe    ;|
 ;---------------------------------------------------------------------o
