@@ -268,7 +268,7 @@ return                                                               ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & ,:: Send, {Del}                                           ;|
 CapsLock & .:: Send, ^{Del}                                          ;|
-CapsLock & m:: Send, {BS}                                            ;|
+;CapsLock & m:: Send, {BS}                                            ;|
 CapsLock & n:: Send, ^{BS}                                           ;|
 CapsLock & d:: Send, +{Home}{Del}                                    ;|
 CapsLock & f:: Send, +{End}{Del}                                     ;|
@@ -380,8 +380,8 @@ CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe    ;|
 ;                     CapsLock + 9  |  Shift + 9     (               ;|
 ;                     CapsLock + 0  |  Shift + 0     )               ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & `;:: Send, {Enter}                                        ;|
-;CapsLock & m:: Send, {Enter}                                         ;|
+CapsLock & `;:: Send, {BS}                                        ;|
+CapsLock & m:: Send, {Enter}                                         ;|
 CapsLock & [:: Send, {Esc}                                           ;|
 CapsLock & ':: Send, =                                               ;|
 ;CapsLock & [:: Send, ^-                                              ;|
